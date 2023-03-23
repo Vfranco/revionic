@@ -1,0 +1,33 @@
+<div class="dropdown">
+  <div
+    class="dropdown__select"
+    (click)="toggle()"
+    (clickOutSide)="closeOptions($event)"
+  >
+    <span class="dropdown__placeholder">{{
+      defaultValue.DEFAULT == selectedValue
+        ? defaultValue.DEFAULT
+        : selectedValue
+    }}</span>
+    <i
+      class="bx bx-chevron-{{
+        toggleContainer ? defaultValue.DOWN : defaultValue.UP
+      }}"
+    ></i>
+  </div>
+  <ul class="dropdown__options" [hidden]="toggleContainer">
+    <li
+      class="dropdown__option"
+      *ngIf="items.length == defaultValue.EMPTY; else showOptions"
+    >
+      <span class="dropdown__option-text">No data to show</span>
+    </li>
+    <ng-template #showOptions>
+      <ng-container *ngFor="let item of items; let identifier = index">
+        <li class="dropdown__option" (click)="selectOption(item, identifier)">
+          <span class="dropdown__option-text">{{ item }}</span>
+        </li>
+      </ng-container>
+    </ng-template>
+  </ul>
+</div>

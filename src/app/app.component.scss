@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  .container {
+    width: 600px;
+
+    .item-selected {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}

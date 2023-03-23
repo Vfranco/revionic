@@ -102,6 +102,37 @@
           }
         }
       }
+    },
+    "revionic-lib": {
+      "projectType": "library",
+      "root": "projects/revionic-lib",
+      "sourceRoot": "projects/revionic-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/revionic-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/revionic-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/revionic-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/revionic-lib/src/test.ts",
+            "tsConfig": "projects/revionic-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/revionic-lib/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }
