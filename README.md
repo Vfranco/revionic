@@ -1,6 +1,6 @@
 # RevionicTest
 
-This project is a test for Revionics
+This project is a test for Revionics, make sure run node higher than 12
 
 #
 Clone the project
