@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "revionic-lib": "ng build revionic-lib",
+    "revionics-lib": "ng build revionic-lib",
     "test": "ng test"
   },
   "private": true,

@@ -1,4 +1,4 @@
-# RevionicTest
+# Revionics Test
 
 This project is a test for Revionics, make sure run node higher than 12
 
@@ -6,7 +6,7 @@ This project is a test for Revionics, make sure run node higher than 12
 Clone the project
 
 ```bash
-git clone https://github.com/Vfranco/revionic.git
+git clone https://github.com/Vfranco/revionics.git
 ```
 
 Install dependencies
@@ -18,7 +18,7 @@ npm install
 run the library
 
 ```bash
-npm run revionic-lib
+npm run revionics-lib
 ```
 
 start the project
